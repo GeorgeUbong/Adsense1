@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp247 - Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <h1>Temp247</h1>
+      <button id="toggleDarkMode">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="converter">
+      <h2>Temperature Converter</h2>
+      <div class="inputs">
+        <label for="inputTemp">Enter Temperature:</label>
+        <input type="number" id="inputTemp" placeholder="0">
+        <select id="fromUnit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+      <div class="output">
+        <span>Converted to:</span>
+        <span id="outputTemp">0</span>
+        <select id="toUnit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+      <button id="convertButton">Convert</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Temp247</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
